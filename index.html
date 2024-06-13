@@ -6,6 +6,16 @@
     <title>Szczep 649</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+ <script>
+        function switchTabs(tab) {
+            document.getElementById('MainPage').style.display = 'none';
+            document.getElementById('SecondPage').style.display = 'none';
+            document.getElementById('ThirdPage').style.display = 'none';
+            document.getElementById('FourthPage').style.display = 'none';
+            document.getElementById('FifthPage').style.display = 'none';
+            document.getElementById(tab).style.display = 'block';
+        }
+    </script>
 <body>
     <header>
         <div class="logos">
@@ -44,10 +54,56 @@
                 Dziękujemy wszystkim, którzy przekażą 1,5% na rzecz Naszego Szczepu ;)</p>
             </div>
         </div>
+        <div id="Oboz" class="content-section2" style="display:flex;">
+           
+            <div>
+                <h2>HARCERSKA AKCJA LETNIA 2024</h2>
+                <p>Drodzy rodzice,
+                    planowana w tym roku Harcerska Akcja Letnia drużyn 49 DH Delta Diraca, 64 RDH Czerwone Maki, 64 RDH Bór i 64 RDHS Parasol wypada w terminie <b>05-20.07.2024 r.</b><br/>
+                    Obóz odbędzie się w <b>Ośrodku Szkoleniowo-Wypoczynkowym Hufca ZHP Pabianice w Małczu. </b>(<a href="https://malecz.zhp.pl/">https://malecz.zhp.pl/</a>)<br/>
+                    Koszt HAL to<b> 1750 zł.</b><br/>
+                    Na zgłoszenia przez wypełnienie poniższego formularza czekamy do <b>14.04.2024r.</b><br/>
+                    Zaliczka w wysokości 550 zł jest potwierdzeniem zgłoszenia i czekamy na nią do 21 kwietnia.
+                    Kolejne płatności rozłożone są następująco: <br/>
+                   <b>do 5.05: 600 zł <br/>
+                    do 26.05: 600 zł</b><br/>
+                    <br></br>
+                    Dane do przelewu:<br/>
+                    Właściciel: Hufiec ZHP Wołomin <br/>
+                    43 1140 1010 0000 3287 7500 1025<br/>
+                    DSCZ <Imię i Nazwisko> HAL Zaliczka 1<br/>
+                    <br></br>
+                    W tytule przelewu MUSI znaleźć się skrót DSCZ (Dodatkowa składka członkowska zadaniowa) ze względów skarobwych, inaczej przelewy będą zwracane i będzie trzeba je wykonać jeszcze raz.</p>
+            </div>
+        </div>
+
+        <div id="Zbiorki" class="content-section3" style="display:flex;">
+            <img src="images/2.jpg" alt="Zbiorki Image">
+            <div>
+                <h2>ZBIÓRKI</h2>
+                <p>Harmonogram zbiórek oraz informacje na temat tego, co planujemy na najbliższych spotkaniach. Zobacz, co się dzieje w naszym szczepie i dołącz do nas na zbiórkach!<br/>
+                    <b>Startujemy już we wrześniu!</b>
+                </p>
+            </div>
+        </div>
+        <div id="SecondPage" style="display:none;">
+            <h2>Drużyny</h2>
+            <p>Informacje o drużynach.</p>
+        </div>
+        <div id="ThirdPage" style="display:none;">
+            <h2>Kadra</h2>
+            <p>Informacje o kadrze.</p>
+        </div>
+        <div id="FourthPage" style="display:none;">
+            <h2>Zdjęcia</h2>
+            <p>Galeria zdjęć.</p>
+        </div>
+        <div id="FifthPage" style="display:none;">
+            <h2>Kontakt</h2>
+            <p>Informacje kontaktowe.</p>
+        </div>
     </section>
 
     
 </body>
 </html>
-
-
