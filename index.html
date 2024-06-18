@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Szczep 649</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+    </style>
 </head>
  <script>
         function switchTabs(tab) {
@@ -24,11 +26,17 @@
         </div>
        
         <div class="menu">
-            <button class="button1" onclick="switchTabs('MainPage')">Strona główna</button>
-            <button class="button2" onclick="switchTabs('SecondPage')">Drużyny</button>
-            <button class="button3" onclick="switchTabs('ThirdPage')">Kadra</button>
-            <button class="button4" onclick="switchTabs('FourthPage')">Zdjęcia</button>
-            <button class="button5" onclick="switchTabs('FifthPage')">Kontakt</button>
+            <button class="button1" onclick="document.getElementById('Aktualnosci').scrollIntoView();">Aktualności</button>
+            <div class="button2">
+                <button class="button2">Drużyny</button>
+                <div class="button2-content">
+                    <a href="#Druzyny1" onclick="document.getElementById('Druzyna1').scrollIntoView();">49 DH Delta Diraca</a>
+                    <a href="#Druzyny2" onclick="document.getElementById('Druzyna2').scrollIntoView();">64 RDH Czerwone Maki</a>
+                </div>
+            </div>            
+            <button class="button3" onclick="document.getElementById('Oboz').scrollIntoView();">Obóz</button>
+            <button class="button4" onclick="document.getElementById('Skladki').scrollIntoView();">Składki</button>
+            <button class="button5" onclick="document.getElementById('Kontakt').scrollIntoView();">Kontakt</button>
         </div>
     </header>
 
@@ -40,70 +48,131 @@
     </section>
 
     <section id="content">
-        <div id="MainPage" class="content-section" style="display:flex;">
-            <img src="images/10.jpg" alt width="50%">
+        <div id="Aktualnosci" class="content-section" >
+               
             <div>
-                <h2>1,5% DLA SZCZEPU</h2>
-            <p>Jak przekazać 1,5% dla Naszego Szczepu?<br/>
-                To bardzo proste!<br/>
-                W rozliczeniu finansowym należy podać następujące dane:<br/>
-                Numer KRS: 0000268913<br/>
-                Organizacja: Chorągiew Stołeczna ZHP<br/>
-                Cel szczegółowy: Hufiec ZHP Wołomin 49 DH Delta Diraca <br/>
-                Cel szczegółowy: Hufiec ZHP Wołomin 64 RDH Czerwone Maki <br/>
-                Dziękujemy wszystkim, którzy przekażą 1,5% na rzecz Naszego Szczepu ;)</p>
-            </div>
+                <h2>1,5% dla szczepu
+                </h2>
+                <p>Jak przekazać 1,5% dla Naszego Szczepu?<br/>
+                    To bardzo proste!<br/>
+                    W rozliczeniu finansowym należy podać następujące dane:<br/>
+                    Numer KRS: 0000268913<br/>
+                    Organizacja: Chorągiew Stołeczna ZHP<br/>
+                    Cel szczegółowy: Hufiec ZHP Wołomin 49 DH Delta Diraca <br/>
+                    Cel szczegółowy: Hufiec ZHP Wołomin 64 RDH Czerwone Maki <br/>
+                    Dziękujemy wszystkim, którzy przekażą 1,5% na rzecz Naszego Szczepu ;)</p></div>
         </div>
-        <div id="Oboz" class="content-section2" style="display:flex;">
-           
-            <div>
-                <h2>HARCERSKA AKCJA LETNIA 2024</h2>
-                <p>Drodzy rodzice,
-                    planowana w tym roku Harcerska Akcja Letnia drużyn 49 DH Delta Diraca, 64 RDH Czerwone Maki, 64 RDH Bór i 64 RDHS Parasol wypada w terminie <b>05-20.07.2024 r.</b><br/>
-                    Obóz odbędzie się w <b>Ośrodku Szkoleniowo-Wypoczynkowym Hufca ZHP Pabianice w Małczu. </b>(<a href="https://malecz.zhp.pl/">https://malecz.zhp.pl/</a>)<br/>
-                    Koszt HAL to<b> 1750 zł.</b><br/>
-                    Na zgłoszenia przez wypełnienie poniższego formularza czekamy do <b>14.04.2024r.</b><br/>
-                    Zaliczka w wysokości 550 zł jest potwierdzeniem zgłoszenia i czekamy na nią do 21 kwietnia.
-                    Kolejne płatności rozłożone są następująco: <br/>
-                   <b>do 5.05: 600 zł <br/>
-                    do 26.05: 600 zł</b><br/>
-                    <br></br>
-                    Dane do przelewu:<br/>
-                    Właściciel: Hufiec ZHP Wołomin <br/>
-                    43 1140 1010 0000 3287 7500 1025<br/>
-                    DSCZ <Imię i Nazwisko> HAL Zaliczka 1<br/>
-                    <br></br>
-                    W tytule przelewu MUSI znaleźć się skrót DSCZ (Dodatkowa składka członkowska zadaniowa) ze względów skarobwych, inaczej przelewy będą zwracane i będzie trzeba je wykonać jeszcze raz.</p>
-            </div>
-        </div>
-
-        <div id="Zbiorki" class="content-section3" style="display:flex;">
-            <img src="images/2.jpg" alt="Zbiorki Image">
-            <div>
-                <h2>ZBIÓRKI</h2>
-                <p>Harmonogram zbiórek oraz informacje na temat tego, co planujemy na najbliższych spotkaniach. Zobacz, co się dzieje w naszym szczepie i dołącz do nas na zbiórkach!<br/>
-                    <b>Startujemy już we wrześniu!</b>
-                </p>
-            </div>
-        </div>
-        <div id="SecondPage" style="display:none;">
-            <h2>Drużyny</h2>
-            <p>Informacje o drużynach.</p>
-        </div>
-        <div id="ThirdPage" style="display:none;">
-            <h2>Kadra</h2>
-            <p>Informacje o kadrze.</p>
-        </div>
-        <div id="FourthPage" style="display:none;">
-            <h2>Zdjęcia</h2>
-            <p>Galeria zdjęć.</p>
-        </div>
-        <div id="FifthPage" style="display:none;">
-            <h2>Kontakt</h2>
-            <p>Informacje kontaktowe.</p>
-        </div>
-    </section>
-
     
+
+            <div id="Druzyny" class="content-section2" >
+               
+                <div>
+                    <h2>Drużyny</h2>
+                    <h1 id="Druzyna1">49 Drużyna Harcerska „Delta Diraca”
+                    <a href="https://www.facebook.com/49DHdeltadiraca"><img src="images/delta.jpg" alt width="14%"></a></h1>
+                <b>Drużynowy :</b> Jakub Miesiąc<br/>
+
+                <b>Zbiórki :</b>  Spotykamy się przy kościele w Helenowie<br/><br/>
+
+                <a href="https://www.facebook.com/49DHdeltadiraca">49 DH Delta Diraca</a><br/><br/>
+                    
+
+                <h1 id="Druzyna2">64 Radzymińska Drużyna Harcerska „Czerwone Maki” 
+                <a href="https://www.facebook.com/ZHP-Radzymin-179583075395190/"><img src="images/maki2.jpg" alt  width="15%"></a></h1>
+                <b>Drużynowy :</b> Kamil Siebierwski<br/>
+
+                <b>Zbiórki:</b><br/>
+                Piątki o 16.30 Szkoła Podstawowa nr 2 w Radzyminie ul. Marii Konopnickiej 24<br/>
+                Soboty o 10.00 Szkoła Podstawowa nr 2 w Słupnie ul.Szkolna 3<br/><br/>
+                <a href="https://www.facebook.com/ZHP-Radzymin-179583075395190/">64 RDH „Czerwone Maki"</a><br/><br/>
+
+                Jesteśmy 64 RDH „ Czerwone Maki. Drużyna istnieje od października 1990 roku. Obecnie działamy w kilku szkołach: w SP nr 2 w Słupnie oraz w Szkole Podstawowej nr 2 w Radzyminie. Nazwa drużyny pochodzi od pieśni czerwone maki na Monte Cassino, autorem jej słów jest Feliks Konarski a słowa te powstały w nocy z 17 na 18 maja 1944r.
+                Z połączenia odznak rozpoznawczych dwóch polskich jednostek wchodzących w skład 2 Korpusu Polskiego powstało logo drużyny. Zielony świerk na biało-czerwonym tle był odznaką rozpoznawczą 3 Dywizji Strzelców Karpackich pod dowództwem gen. Bronisława Ducha. Żubr był odznaką 5 Kresowej Dywizji Piechoty walczącej pod dowództwem gen. Nikodema Sulika.
+                </div>
+            </div>
+        
+
+            <div id="Oboz" class="content-section2" >
+                <!-- <img src="images/hal.jpg" alt width="30%" height="30%"> -->
+                <div>
+                    <h2>Harcerska akcja letnia 2024</h2>
+                    <p>Drodzy rodzice,
+                        planowana w tym roku Harcerska Akcja Letnia drużyn 49 DH Delta Diraca, 64 RDH Czerwone Maki, 64 RDH Bór i 64 RDHS Parasol wypada w terminie <b>05-20.07.2024 r.</b><br/>
+                        Obóz odbędzie się w <b>Ośrodku Szkoleniowo-Wypoczynkowym Hufca ZHP Pabianice w Małczu. </b>(<a href="https://malecz.zhp.pl/">https://malecz.zhp.pl/</a>)<br/>
+                        Koszt HAL to<b> 1750 zł.</b><br/>
+                        Na zgłoszenia przez wypełnienie poniższego formularza czekamy do <b>14.04.2024r.</b><br/>
+                        Zaliczka w wysokości 550 zł jest potwierdzeniem zgłoszenia i czekamy na nią do 21 kwietnia.
+                        Kolejne płatności rozłożone są następująco: <br/>
+                       <b>do 5.05: 600 zł <br/>
+                        do 26.05: 600 zł</b><br/>
+                        <br></br>
+                        Dane do przelewu:<br/>
+                        Właściciel: Hufiec ZHP Wołomin <br/>
+                        43 1140 1010 0000 3287 7500 1025<br/>
+                        DSCZ <Imię i Nazwisko> HAL Zaliczka 1<br/>
+                        <br></br>
+                        W tytule przelewu MUSI znaleźć się skrót DSCZ (Dodatkowa składka członkowska zadaniowa) ze względów skarobwych, inaczej przelewy będą zwracane i będzie trzeba je wykonać jeszcze raz.</p>
+                </div>
+            </div>
+
+            <div id="Skladki" class="content-section2" style="display:flex;">
+                <div>
+                    <h2>Składki</h2>
+                    <p>Jednym z obowiązków członkowskich w Związku Harcerstwa Polskiego jest opłacanie składek członkowskich. Od IV kwartału 2017 roku wysokość składki ustalona jest dla każdej chorągwi indywidualnie. Składkę tworzą:
+                        część należna Głównej Kwaterze ZHP – w wysokości 11 złotych kwartalnie,
+                        część należna chorągwiom, hufcom i podstawowym jednostkom organizacyjnym - kwartalnie.
+                        Kwota wynika z Uchwały nr 31/XLII Rady Naczelnej ZHP z dnia 8 listopada 2023 r. w sprawie określenia wysokości podstawowej składki członkowskiej na 2024 r., stanowi stały składnik podstawowej składki członkowskiej w każdej jednostce,</p>
+                </div>
+            </div>
+        
+            <div id="Kontakt" class="content-section2">
+                <div>
+                    <h2>Kontakt</h2>
+                    <p><b>Chorągiew Stołeczna Związku Harcerstwa Polskiego</b><br/>
+
+                        <b>Hufiec Wołomin</b><br/>
+                        
+                        im. hm. Mieczysława Cicheckiego <br/>
+                       
+                        ul. Długa 34, 05-200 Wołomin<br/>
+                        
+                        NIP: 527-252-61-38<br/>
+                        REGON: 140786064<br/>
+                        KRS: 0000268913<br/><br/>
+                        
+                        <b>Kontakt mailowy:</b><br/>
+                        
+                        wolomin@zhp.pl<br/><br/>
+                        
+                        <b> Kontakt z władzami:</b><br/>
+                        
+                        <b>Komendant Hufca</b> <br/>
+                        
+                        phm. Szymon Chaciński<br/>
+                        
+                        e-mail: chacinski.szymon@zhp.net.pl<br/>
+                        
+                        <b>Zastępca Komendanta Hufca</b><br/>
+                        
+                        pwd. Tomasz Miszkurka<br/>
+                        
+                        e-mail: tomasz.miszkurka@zhp.net.pl<br/>
+                        
+                        <b>Skarbniczka Hufca</b><br/>
+                        
+                        pwd. Anna Kałuska<br/>
+                        e-mail:kaluska.anna@zhp.net.pl<br/><br/>
+                        
+                        <b> Dane do faktury:</b><br/>
+                        
+                        Chorągiew Stołeczna ZHP <br/>
+                        01-067 Warszawa, ul. Piaskowa 4<br/>
+                        NIP: 527-252-61-38<br/>
+                        
+                        <b>Numer Rachunku Bankowego</b><br/>
+                        
+                        12 1140 1010 0000 3287 7500 1001</div>
+            </div>
+    </section>
 </body>
 </html>
